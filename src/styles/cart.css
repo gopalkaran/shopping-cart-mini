@@ -1,0 +1,6 @@
+tr {
+  border-bottom: 1px solid #aaa; /* Add line separator below each row */
+}
+tr:last-child {
+  border-bottom: none; /* Remove the border for the last row */
+}

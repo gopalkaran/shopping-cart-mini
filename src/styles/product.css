@@ -1,0 +1,48 @@
+.card {
+  box-shadow: 0 0 4px 1px var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.cardImg {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  padding: 1rem;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  margin: auto;
+}
+
+.cardContent h3 {
+  margin: 1px;
+}
+.cardContent p {
+  margin: 1px;
+}
+
+.btnGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.btnGroup button {
+  background-color: var(--normal-btn-bg);
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.btnGroup button:hover {
+  background-color: var(--normal-btn-hover);
+}
