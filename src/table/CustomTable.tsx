@@ -26,7 +26,7 @@ const CustomTable = ({
     dispatch(removeFromCart(itemName));
   }
   return (
-    <table width={"70%"}>
+    <table width={"70%"} className="responsiveTable">
       <thead className={"tableHeader"}>
         <tr>
           {columns.map((column, index) => (
@@ -46,12 +46,13 @@ const CustomTable = ({
                     justifyContent: "center",
                     alignItems: "center",
                   }}
+                  className="item-cell"
                 >
                   <img src={row.image} alt={row.name} height={"150px"} />
                   <p>{row.name}</p>
                 </td>
               ) : column.header === "Quantity" ? (
-                <td>
+                <td className="quantity-cell">
                   <button
                     style={{ padding: "0 10px" }}
                     onClick={() => handleDecrement(row.name)}
@@ -71,7 +72,7 @@ const CustomTable = ({
                   </button>
                 </td>
               ) : column.key === "deleteItem" ? (
-                <td>
+                <td className="delete-cell">
                   <button onClick={() => handleRemove(row.name)}>Remove</button>
                 </td>
               ) : (

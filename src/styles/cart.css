@@ -4,3 +4,88 @@ tr {
 tr:last-child {
   border-bottom: none; /* Remove the border for the last row */
 }
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.responsiveTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHeader th,
+.tableBody td {
+  padding: 10px;
+  text-align: left;
+}
+
+.item-cell {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-cell input {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .responsiveTable,
+  .tableHeader,
+  .tableBody,
+  .tableHeader th,
+  .tableBody td {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .responsiveTable {
+    border: none;
+  }
+
+  .tableHeader {
+    display: none;
+  }
+
+  .row-style {
+    margin: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    width: 500px;
+  }
+
+  .row-style td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .item-cell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-cell img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+
+  .row-style .quantity-cell {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quantity-cell input {
+    width: 50px;
+    text-align: center;
+  }
+}
