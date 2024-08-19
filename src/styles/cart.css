@@ -30,6 +30,17 @@ tr:last-child {
   text-align: center;
 }
 
+.delete-cell button {
+  background-color: var(--normal-btn-bg);
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.delete-cell button:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 768px) {
   .responsiveTable,
   .tableHeader,

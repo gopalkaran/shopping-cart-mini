@@ -43,6 +43,10 @@
   border: none;
 }
 
+.btnGroup button:focus {
+  outline: none;
+}
+
 .btnGroup button:hover {
   background-color: var(--normal-btn-hover);
 }
